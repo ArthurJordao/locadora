@@ -8,19 +8,19 @@ import org.vaadin.viritin.layouts.MHorizontalLayout
 
 abstract class TabelaForm<T> : UI(), Tabela<T> {
     val root = MHorizontalLayout()
-    abstract val tabela: MGrid<T>
-    abstract val formulario: AbstractForm<T>
+    protected abstract val tabela: MGrid<T>
+    protected abstract val formulario: AbstractForm<T>
     override fun init(p0: VaadinRequest?) {
         content = root
         configuraTabela()
         adicionaFormulario()
     }
 
-    fun adicionaFormulario() {
+    private fun adicionaFormulario() {
         root.addComponent(formulario)
     }
 
-    open fun configuraTabela() {
+    protected open fun configuraTabela() {
         root.addComponent(tabela)
         tabela.addItemClickListener {
             formulario.entity = it.item
@@ -28,7 +28,7 @@ abstract class TabelaForm<T> : UI(), Tabela<T> {
         atualizaTabela()
     }
 
-    abstract fun atualizaTabela()
+    protected abstract fun atualizaTabela()
 }
 
 

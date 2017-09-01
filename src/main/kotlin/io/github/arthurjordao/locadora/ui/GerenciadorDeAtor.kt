@@ -48,7 +48,7 @@ class GerenciadorDeAtor(val repository: AtorRepository) : TabelaForm<Ator>() {
 
 class FormularioDeAtor(val tabela: Tabela<Ator>) : AbstractForm<Ator>(Ator::class.java) {
 
-    val nome = MTextField("Nome")
+    private val nome = MTextField("Nome")
 
     init {
         configuraBotoes()

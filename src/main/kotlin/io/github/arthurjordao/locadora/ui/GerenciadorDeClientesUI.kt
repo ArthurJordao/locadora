@@ -44,10 +44,10 @@ class GerenciadorDeClientesUI(val repository: ClienteRepository) : TabelaForm<Cl
 }
 
 class FormularioCliente(val tabela: Tabela<Cliente>) : AbstractForm<Cliente>(Cliente::class.java) {
-    val nome = MTextField("Nome")
-    val telefone = MTextField("Telefone")
-    val cpf = MTextField("Cpf")
-    val endereco = MTextField("Endereço")
+    private val nome = MTextField("Nome")
+    private val telefone = MTextField("Telefone")
+    private val cpf = MTextField("Cpf")
+    private val endereco = MTextField("Endereço")
 
     init {
         configuraBotoes()
