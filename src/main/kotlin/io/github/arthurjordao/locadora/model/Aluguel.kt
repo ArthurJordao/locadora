@@ -13,7 +13,7 @@ data class Aluguel(
         @Temporal(TemporalType.DATE)
         var dataDeEntrega: Date = Date(),
         @ManyToMany
-        var filmes: MutableList<Filme> = mutableListOf(),
+        var dvds: MutableSet<DVD> = mutableSetOf(),
         @ManyToOne
         var cliente: Cliente = Cliente()
 ) {

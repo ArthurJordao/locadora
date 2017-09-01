@@ -9,7 +9,7 @@ data class Ator(
         var id: Long = 0,
         var nome: String = "",
         @ManyToMany
-        var filmes: MutableList<Filme> = mutableListOf()
+        var filmes: MutableSet<Filme> = mutableSetOf()
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

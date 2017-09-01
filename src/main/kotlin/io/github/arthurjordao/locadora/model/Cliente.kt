@@ -21,6 +21,7 @@ data class Cliente(
         var cpf: String = "",
         @get:NotBlank(message = "Endereço não pode ser vazio")
         var endereco: String = ""
+
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
