@@ -1,2 +1,2 @@
-## Locadora
+## Locadora [![codebeat badge](https://codebeat.co/badges/502aad25-7dd2-48cc-963e-e731183d4a3b)](https://codebeat.co/projects/github-com-arthurjordao-locadora-master) [![Build Status](https://travis-ci.org/ArthurJordao/locadora.svg?branch=master)](https://travis-ci.org/ArthurJordao/locadora)
 Programa para gerenciar locadoras
