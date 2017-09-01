@@ -9,7 +9,7 @@ import org.vaadin.viritin.form.AbstractForm
 import org.vaadin.viritin.grid.MGrid
 import org.vaadin.viritin.layouts.MVerticalLayout
 
-@SpringUI(path = "/ator")
+@SpringUI(path = "/atores")
 class GerenciadorDeAtor(val repository: AtorRepository) : TabelaForm<Ator>() {
 
     override val tabela: MGrid<Ator> = MGrid(Ator::class.java)
