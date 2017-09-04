@@ -11,7 +11,7 @@ data class Filme(
         @ManyToOne
         var genero: Genero = Genero(),
         @ManyToMany(mappedBy = "filmes")
-        var estrelas: MutableList<Ator> = mutableListOf()
+        var estrelas: MutableSet<Ator> = mutableSetOf()
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
